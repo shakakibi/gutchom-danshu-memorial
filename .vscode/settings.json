@@ -5,7 +5,7 @@
 	"editor.wordWrap": "on",
 	"workbench.colorCustomizations": {
 		"titleBar.activeBackground": "#cc00ff",
-		"titleBar.activeForeground": "#cc00ff",
+		"titleBar.activeForeground": "#ffffff",
 		"activityBarBadge.background": "#ff0000"
 	},
 	"files.encoding": "utf8",
