@@ -1,0 +1,45 @@
+{
+	// VSCode
+	"editor.tabSize": 2,
+	"editor.insertSpaces": false,
+	"editor.wordWrap": "on",
+	"workbench.colorCustomizations": {
+		"titleBar.activeBackground": "#cc00ff",
+		"titleBar.activeForeground": "#cc00ff",
+		"activityBarBadge.background": "#ff0000"
+	},
+	"files.encoding": "utf8",
+	// 改行コードを\nにすれば、\r\nと比較して改行コードのサイズがなんと半分になる！
+	"files.eol": "\n",
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": true,
+		"source.fixAll.eslint": true
+	},
+
+	// ESLint
+	"eslint.alwaysShowStatus": true,
+	"eslint.run": "onType",
+	"eslint.codeAction.showDocumentation": {
+		"enable": true
+	},
+
+	// Prettier
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"editor.formatOnType": true,
+
+	// ESLintでjs,jsx,ts,tsxファイルを自動整形！
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
+
+	// スペルチェッカーでミススペル扱いされる単語を除外！
+		"cSpell.words": [
+		"Parens",
+		"peaceiris"
+	]
+}
