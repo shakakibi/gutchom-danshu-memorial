@@ -1,29 +1,45 @@
 {
-  "private": true,
-  "name": "gutchom-danshu-memorial",
-  "description": "Celebrating Gutchom Website",
-  "version": "0.0.1",
-  "author": "shakakibi <shakakibi@gmail.com>",
-  "license": "Celebrating Gutchom Open Agreement License",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
-    "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "@lekoarts/gatsby-theme-cara": "^3.0.0",
-    "gatsby": "^4.12.1",
-    "gatsby-plugin-gatsby-cloud": "^4.12.1",
-    "gatsby-plugin-manifest": "^4.12.1",
-    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.27",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
-  },
-  "devDependencies": {
-    "cross-env": "^7.0.3"
-  }
+	"private": true,
+	"name": "gutchom-danshu-memorial",
+	"description": "Celebrating Gutchom Website",
+	"version": "0.0.1",
+	"author": "shakakibi <shakakibi@gmail.com>",
+	"license": "Celebrating Gutchom Open Agreement License",
+	"scripts": {
+		"build": "gatsby build",
+		"develop": "gatsby develop",
+		"develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
+		"build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
+		"start": "gatsby develop",
+		"serve": "gatsby serve",
+		"lint": "eslint --ext .ts,.tsx,.js,.jsx ./src",
+		"lint:check": "eslint --max-warnings 0 --ext .ts,.tsx,.js,.jsx ./src",
+		"clean": "gatsby clean"
+	},
+	"dependencies": {
+		"@lekoarts/gatsby-theme-cara": "^3.0.0",
+		"gatsby": "^4.12.1",
+		"gatsby-plugin-gatsby-cloud": "^4.12.1",
+		"gatsby-plugin-manifest": "^4.12.1",
+		"gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.27",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.19.0",
+		"@typescript-eslint/parser": "^5.19.0",
+		"cross-env": "^7.0.3",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-import-resolver-webpack": "^0.13.2",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-jest": "^26.1.4",
+		"eslint-plugin-jsx-a11y": "^6.5.1",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-react": "^7.29.4",
+		"eslint-plugin-react-hooks": "^4.4.0",
+		"eslint-watch": "^8.0.0",
+		"prettier": "^2.6.2",
+		"typescript": "^4.6.3"
+	}
 }
