@@ -1,8 +1,9 @@
-require(`dotenv`).config()
+require(`dotenv`).config();
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
+	pathPrefix: `.`,
 	siteMetadata: {
 		// You can overwrite values here that are used for the SEO component
 		// You can also add new values here to query them like usual
@@ -58,4 +59,4 @@ module.exports = {
 			},
 		},
 	].filter(Boolean),
-}
+};

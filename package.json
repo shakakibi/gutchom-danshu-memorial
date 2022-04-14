@@ -1,5 +1,5 @@
 {
-	"homepage": "./",
+	"homepage": ".",
 	"private": true,
 	"name": "gutchom-danshu-memorial",
 	"description": "Celebrating Gutchom Website",
@@ -7,11 +7,11 @@
 	"author": "shakakibi <shakakibi@gmail.com>",
 	"license": "Celebrating Gutchom Open Agreement License",
 	"scripts": {
-		"build": "gatsby build",
-		"develop": "gatsby develop",
-		"develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
-		"build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
-		"start": "gatsby develop",
+		"build": "gatsby build --prefix-paths",
+		"develop": "gatsby develop --verbose --host=0.0.0.0",
+		"develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop --verbose --host=0.0.0.0",
+		"build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build --prefix-paths",
+		"start": "gatsby develop --verbose --host=0.0.0.0",
 		"serve": "gatsby serve",
 		"lint": "eslint --ext .ts,.tsx,.js,.jsx ./src",
 		"lint:check": "eslint --max-warnings 0 --ext .ts,.tsx,.js,.jsx ./src",
